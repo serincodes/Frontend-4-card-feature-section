@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+    background-color: hsl(0, 0%, 98%);
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+}
+
+header>p {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: hsl(234, 12%, 34%);
+    font-weight: 200;
+}
+
+h2 {
+    padding-bottom: 20px;
+}
+
+h1,
+h2 {
+    font-size: 30px;
+    line-height: 1.4;
+}
+
+h2,
+h3 {
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
+    justify-content: center;
+    align-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.box-container>div {
+    background-color: white;
+    border-radius: 5px;
+    width: 75%;
+    max-width: 350px;
+    height: 250px;
+    display: inline-block;
+    padding: 25px 30px;
+    box-shadow: 0px 10px 15px hsl(229, 6%, 80%);
+    justify-self: center;
+    display: grid;
+}
+
+img {
+    justify-self: end;
+    align-self: end;
+}
+
+.box-supervisor {
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+.box-builder {
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.box-karma {
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.box-calculator {
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+.attribution {
+    padding-top: 60px;
+}
+
+
+/* desktop */
+
+@media (min-width: 800px) {
+    .box-container>div {
+        width: 350px;
+        height: 250px;
+    }
+    .box-supervisor {
+        border-top: 5px solid hsl(180, 62%, 55%);
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row: 2/4;
+    }
+    .box-builder {
+        border-top: 5px solid hsl(0, 78%, 62%);
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row: 1/3;
+    }
+    .box-karma {
+        border-top: 5px solid hsl(34, 97%, 64%);
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row: 3/5;
+    }
+    .box-calculator {
+        border-top: 5px solid hsl(212, 86%, 64%);
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row: 2/4;
+    }
+}
