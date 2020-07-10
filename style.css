@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
 }
-
+@import url("https://fonts.google.com/specimen/Poppins");
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
@@ -34,7 +34,7 @@ h2 {
 
 h1,
 h2 {
-    font-size: 30px;
+    font-size: 2rem;
     line-height: 1.4;
 }
 
@@ -49,8 +49,7 @@ h3 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-gap: 30px;
-    justify-content: center;
-    align-content: center;
+    place-content: center;
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -60,7 +59,7 @@ h3 {
     border-radius: 5px;
     width: 75%;
     max-width: 350px;
-    height: 250px;
+    height: 15rem;
     display: inline-block;
     padding: 25px 30px;
     box-shadow: 0px 10px 15px hsl(229, 6%, 80%);
@@ -69,8 +68,7 @@ h3 {
 }
 
 img {
-    justify-self: end;
-    align-self: end;
+  place-self: end;
 }
 
 .box-supervisor {
@@ -96,7 +94,7 @@ img {
 
 /* desktop */
 
-@media (min-width: 800px) {
+@media (min-width: 1100px) {
     .box-container>div {
         width: 350px;
         height: 250px;
